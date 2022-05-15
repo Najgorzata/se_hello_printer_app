@@ -27,3 +27,6 @@ jobs:
 
       - name: Docker run
         run: make docker_run
+
+      - name: Smoke Test
+        run: make test_smoke

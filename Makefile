@@ -21,3 +21,6 @@ docker_run: docker_build
 		--name hello-world-printer-dev \
 		-p 5000:5000 \
 		-d hello-world-printer
+
+test_smoke:
+	curl -s -o /dev/null -w "%{http_code}" --fail 127.0.0.1:5000
